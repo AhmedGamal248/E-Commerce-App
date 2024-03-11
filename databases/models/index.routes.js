@@ -5,6 +5,7 @@ import { brandRouter } from "../../src/moduels/brand/brand.router.js"
 import { cartRouter } from "../../src/moduels/cart/cart.router.js"
 import { categoryRouter } from "../../src/moduels/category/category.router.js"
 import { couponRouter } from "../../src/moduels/coupon/coupon.router.js"
+import { orderRouter } from "../../src/moduels/order/order.router.js"
 import { productRouter } from "../../src/moduels/product/product.router.js"
 import { reviewRouter } from "../../src/moduels/reviwe/review.router.js"
 import { subCategoryRouter } from "../../src/moduels/subCategory/subCategory.router.js"
@@ -23,5 +24,6 @@ export const bootstrap = (app)=> {
     app.use('/api/v1/adresses',adressRouter)
     app.use('/api/v1/coupons',couponRouter)
     app.use('/api/v1/carts',cartRouter)
+    app.use('/api/v1/orders',orderRouter)
     app.use(globalError)
 }

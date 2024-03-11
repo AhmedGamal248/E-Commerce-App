@@ -20,7 +20,7 @@ const addProductVal = joi.object({
         destination:joi.string().required(),
         filename: joi.string().required(),
         path: joi.string().required(),
-        size: joi.number().max(1000000).required()
+        size: joi.number().max(10000000).required()
         })).required(),
     
         images: joi.array().items(joi.object({
@@ -31,7 +31,7 @@ const addProductVal = joi.object({
         destination:joi.string().required(),
         filename: joi.string().required(),
         path: joi.string().required(),
-        size: joi.number().max(1000000).required()
+        size: joi.number().max(10000000).required()
         })).required(),
 
    
